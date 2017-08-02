@@ -2,6 +2,7 @@
 using System;
 using System.Web.Http;
 using System.Net.Http;
+using System.Web.Script.Serialization;
 
 namespace AperturaRestoService
 {
@@ -24,6 +25,9 @@ namespace AperturaRestoService
                     Log.Info(line);
                 }
             }
+            Log.Info("Json Envío a cocina");
+            var json = new JavaScriptSerializer().Serialize(data);
+            Log.Info(json);
         }
 
         [HttpPost]

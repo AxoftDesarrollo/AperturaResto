@@ -1,6 +1,7 @@
 ﻿using AperturaRestoService.Dto;
 using System;
 using System.Web.Http;
+using System.Web.Script.Serialization;
 
 namespace AperturaRestoService.Api
 {
@@ -23,6 +24,9 @@ namespace AperturaRestoService.Api
                     Log.Info(line);
                 }
             }
+            Log.Info("Json Facturación");
+            var json = new JavaScriptSerializer().Serialize(data);
+            Log.Info(json);
         }
 
         [HttpPost]
