@@ -20,6 +20,9 @@ namespace AperturaRestoService.Dto
         public double Propina { get; set; }
         public double Total { get; set; }
         public String Estado { get; set; }
+        public int CodigoCaja { get; set; }
+        public String DescripcionCaja { get; set; }
+        public String Terminal { get; set; }
         public IList<ComandaRenglonDto> Detalle { get; set; }
     }
 }

@@ -22,6 +22,9 @@ namespace AperturaRestoService.Dto
         public String Estado { get; set; }
         public String TComp { get; set; }
         public String NComp { get; set; }
+        public int CodigoCaja { get; set; }
+        public String DescripcionCaja { get; set; }
+        public String Terminal { get; set; }
         public IList<FacturaRenglonDto> Detalle { get; set; }
     }
 }
