@@ -15,12 +15,14 @@ namespace AperturaRestoService.Dto
         public string CodigoCliente { get; set; }
         public string RazonSocial { get; set; }
         public string Email { get; set; }
+        public string ComunaCliente { get; set; }
         public double Descuento { get; set; }
         public double Recargo { get; set; }
         public double Propina { get; set; }
         public double Total { get; set; }
         public String Estado { get; set; }
         public String TComp { get; set; }
+        public String TipoDocDte { get; set; }
         public String NComp { get; set; }
         public int CodigoCaja { get; set; }
         public String DescripcionCaja { get; set; }
